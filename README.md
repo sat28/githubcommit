@@ -30,7 +30,7 @@ jupyter nbextension enable --py githubcommit
 * Clone your repo in home directory
 * Run the command - source env.sh
 * Configure ssh key (present in ~/.ssh/id_rsa.pub or specified location) in github account
-* Run jupyter notebook
+* Run jupyter notebook from within your repo directory
 
 
 ## Credits
