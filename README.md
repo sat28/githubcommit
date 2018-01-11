@@ -2,15 +2,10 @@
 
 githubcommit is a jupyter notebook extension enabling users push ipython notebooks to a git repo.
 The git button gets displayed in the notebook toolbar. After saving any notebook
-the user can push notebook to pre-specified git repository. There should be few
+the user can push notebook to pre-specified git repository. There are few
 environment variables that must be exported. Currently this extension supports
 commits to a single github repo defined in environment variable but in the long
 run need help to modify this extension allowing user to select his repo and branch.
-
-Please modify and run the env.sh beforehand.
-
-Lastly add the ssh key to your github account for facilitating access. Go to setting of
-github account and go to ssh keys and there add your key (vi ~/.ssh.id_rsa.pub)
 
 ## Installation
 
@@ -27,6 +22,16 @@ To enable this extension for all notebooks:
 ```
 jupyter nbextension enable --py githubcommit
 ```
+
+## Steps
+
+* Install package using
+* Create Git repo where notebooks will be pushed if not already exists
+* Clone your repo in home directory
+* Run the command - source env.sh
+* Configure ssh key (present in ~/.ssh/id_rsa.pub or specified location) in github account
+* Run jupyter notebook
+
 
 ## Credits
 
