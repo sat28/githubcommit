@@ -5,12 +5,12 @@ ssh-keygen -t rsa && ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub && ssh-a
 
 ###################### GIT PARAMETERS #####################################
 export GIT_PARENT_DIR=~
-export GIT_REPO_NAME=gitjuphub
-export GIT_BRANCH_NAME=master
-export GIT_USER=sat28
-export GIT_EMAIL=anand.shaleen@gmail.com
-export GITHUB_ACCESS_TOKEN=b3a18d4fdca638cf347fa7b4833e22f808c12936
-export GIT_USER_UPSTREAM=sat28
+export GIT_REPO_NAME=#your-repo
+export GIT_BRANCH_NAME=#your-branch
+export GIT_USER=#your-gituser
+export GIT_EMAIL=#your-email
+export GITHUB_ACCESS_TOKEN=#access-token from github developer settings
+export GIT_USER_UPSTREAM=#your-user
 
 
 ############################################################################
