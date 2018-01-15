@@ -33,3 +33,5 @@ if [ ! -f ~/.jupyter/jupyter_notebook_config.py ]; then
 fi
 
 echo 'c.NotebookApp.disable_check_xsrf = True' >> ~/.jupyter/jupyter_notebook_config.py
+
+cp ~/githubcommit/config ~/.ssh/config
