@@ -48,7 +48,7 @@ export GIT_USER_UPSTREAM=sat28 <br />
 
 ![Commit Message](screens/commit.png?raw=true "Commit Message")
 
-![Success Message](screens/extension.png?raw=true "Success Message")
+![Success Message](screens/success.png?raw=true "Success Message")
 
 ## Credits
 
