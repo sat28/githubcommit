@@ -44,11 +44,11 @@ export GIT_USER_UPSTREAM=sat28 <br />
 
 ## Screenshots
 
-![Extension](screens/extension.jpg?raw=true "Extension added to toolbar")
+![Extension](screens/extension.png?raw=true "Extension added to toolbar")
 
-![Commit Message](screens/commit.jpg?raw=true "Commit Message")
+![Commit Message](screens/commit.png?raw=true "Commit Message")
 
-![Success Message](screens/extension.jpg?raw=true "Success Message")
+![Success Message](screens/extension.png?raw=true "Success Message")
 
 ## Credits
 
