@@ -42,6 +42,14 @@ export GIT_EMAIL=anand.shaleen@gmail.com <br />
 export GITHUB_ACCESS_TOKEN=#access-token from github developer settings <br />
 export GIT_USER_UPSTREAM=sat28 <br />
 
+## Screenshots
+
+![Extension](screens/extension.jpg?raw=true "Extension added to toolbar")
+
+![Commit Message](screens/commit.jpg?raw=true "Commit Message")
+
+![Success Message](screens/extension.jpg?raw=true "Success Message")
+
 ## Credits
 
 Thanks to https://github.com/Lab41/sunny-side-up for laying the foundation of this extension.
