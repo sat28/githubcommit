@@ -29,7 +29,7 @@ jupyter nbextension enable --py githubcommit
 * Create Git repo where notebooks will be pushed if not already exists
 * Clone this repo in home directory
 * Replace the values in env.sh present in this repo itself
-* Run the command - ~/githubcommit/source env.sh
+* Run the command - source ~/githubcommit/env.sh
 * Configure ssh key (present in ~/.ssh/id_rsa.pub or specified location) in github account
 * Run jupyter notebook from within your repo directory
 
