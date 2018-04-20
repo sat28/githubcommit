@@ -23,7 +23,7 @@ export GIT_REMOTE_UPSTREAM=$GIT_USER_UPSTREAM/$GIT_REPO_NAME
 
 
 ####################### Git Repo where notebooks will be pushed ############
-cd ~ && git clone $GIT_REMOTE_URL_HTTPS
+cd $GIT_PARENT_DIR && git clone $GIT_REMOTE_URL_HTTPS
 
 
 
@@ -34,4 +34,4 @@ fi
 
 echo 'c.NotebookApp.disable_check_xsrf = True' >> ~/.jupyter/jupyter_notebook_config.py
 
-cp ~/githubcommit/config ~/.ssh/config
+cp $GIT_PARENT_DIR/githubcommit/config ~/.ssh/config
