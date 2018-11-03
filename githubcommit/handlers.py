@@ -3,6 +3,7 @@ from notebook.base.handlers import IPythonHandler
 import os, json, git, urllib, requests
 from git import Repo, GitCommandError
 from subprocess import check_output
+import subprocess
 
 class GitCommitHandler(IPythonHandler):
 
@@ -54,8 +55,9 @@ class GitCommitHandler(IPythonHandler):
         # commit current notebook
         # client will sent pathname containing git directory; append to git directory's parent
         try:
-            print(repo.git.add(str(os.environ.get('GIT_PARENT_DIR') + "/" + os.environ.get('GIT_REPO_NAME') + filename)))
-            print(repo.git.commit( a=True, m="{}\n\nUpdated {}".format(msg, filename) ))
+            subprocess.run(['jupyter', 'nbconvert', '--to', 'script', str(os.environ.get('GIT_PARENT_DIR') + "/" + os.environ.get('GIT_REPO_NAME') + filename)])
+            print(repo.git.add(str(os.environ.get('GIT_PARENT_DIR') + "/" + os.environ.get('GIT_REPO_NAME') + filename.replace('ipynb', 'py'))))
+            print(repo.git.commit( a=True, m="{}\n\nUpdated {}".format(msg, filename.replace('ipynb', 'py'))))
         except GitCommandError as e:
             print(e)
             self.error_and_return(cwd, "Could not commit changes to notebook: {}".format(git_dir_parent + filename))
