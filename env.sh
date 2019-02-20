@@ -1,5 +1,5 @@
 ####################### SSH KEY FOR GIT ###################################
-ssh-keygen -t rsa && ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub && eval `ssh-agent -s` && ssh-add -k
+eval `ssh-agent -s` && ssh-add -k
 ####################### To be added to git account settings ################
 
 
