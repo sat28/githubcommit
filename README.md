@@ -12,7 +12,7 @@ run need help to modify this extension allowing user to select his repo and bran
 You can currently install this directly from git:
 
 ```
-pip install git+https://github.com/sat28/githubcommit.git
+pip install git+https://github.com/talina06/githubcommit.git
 jupyter serverextension enable --py githubcommit
 jupyter nbextension install --py githubcommit
 ```
