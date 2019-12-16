@@ -14,7 +14,7 @@ define(['base/js/namespace','base/js/dialog','jquery'],function(IPython, dialog,
             var div = $('<div/>')
 
             var checkbox = '<input type="checkbox" id="commit_only_source" name="feature" value="scales" checked /><label>commit only source code</label>'
-    
+
             div.append(checkbox)
             div.append(p)
                .append(input)
@@ -23,7 +23,7 @@ define(['base/js/namespace','base/js/dialog','jquery'],function(IPython, dialog,
             var container = $('#notebook-container');
 
             function on_ok(){
-                var re = /^\/notebooks(.*?)$/;
+                var re = /^(.*?)\/notebooks(.*?)$/;
                 var filepath = window.location.pathname.match(re)[1];
                 var payload = {
                              'filename': filepath,
