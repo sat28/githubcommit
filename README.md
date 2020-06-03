@@ -14,13 +14,13 @@ You can currently install this directly from git:
 ```
 pip install git+https://github.com/sat28/githubcommit.git
 jupyter serverextension enable --py githubcommit
-jupyter nbextension install --py githubcommit
+jupyter nbextension install --py githubcommit --user
 ```
 
 To enable this extension for all notebooks:
 
 ```
-jupyter nbextension enable --py githubcommit
+jupyter nbextension enable githubcommit --user --py
 ```
 
 ## Steps
