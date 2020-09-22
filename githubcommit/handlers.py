@@ -60,7 +60,9 @@ class GitCommitHandler(IPythonHandler):
             if commit_only_source :
                 subprocess.run(['jupyter', 'nbconvert', '--to', 'script', str(os.environ.get('GIT_PARENT_DIR') + "/" + os.environ.get('GIT_REPO_NAME') + filename)])
                 filename = str(os.environ.get('GIT_PARENT_DIR') + "/" + os.environ.get('GIT_REPO_NAME') + filename.replace('ipynb', 'py'))
-            
+            else:
+                filename = str(os.environ.get('GIT_PARENT_DIR') + "/" + os.environ.get('GIT_REPO_NAME') + filename)
+                
             print(repo.git.add(filename))
             print(repo.git.commit( a=False, m="{}\n\nUpdated {}".format(msg, filename) ))
 
