@@ -26,7 +26,7 @@ jupyter nbextension enable githubcommit --user --py
 ## Steps
 I have made this short video in which I install the extension from scratch (click on the image)- 
 
-[![Watch the video](https://i.ibb.co/7bk1bJ2/Webp-net-resizeimage.png)](https://youtu.be/vKx_4zFvOi8)
+[![Watch the video](https://i.ibb.co/7bk1bJ2/Webp-net-resizeimage.png)](https://www.youtube.com/watch?v=1XPSK1mxfgQ)
 
 * Install package using above commands
 * Create Git repo where notebooks will be pushed if not already exists and clone it in your `GIT_PARENT_DIR`
